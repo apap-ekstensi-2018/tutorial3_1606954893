@@ -30,12 +30,12 @@ public class StudentController {
 		return "add";
 	}
 	
-	/*@RequestMapping("/student/view")
+	@RequestMapping("/student/view")
 	public String view(Model model, @RequestParam(value = "npm", required = true) String npm) {
 		StudentModel student = studentService.selectStudent(npm);
 		model.addAttribute("student", student);
 		return "view";
-	}*/
+	}
 	
 	@RequestMapping("/student/viewall")
 	public String viewAll(Model model) {
